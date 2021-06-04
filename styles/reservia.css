@@ -1,0 +1,486 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  font-family: 'Raleway', sans-serif;;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+main {
+  width: 98%;
+  max-width: 1440px;
+  margin: auto;
+}
+header {
+  width: 98%;
+  max-width: 1440px;
+  margin: auto;
+}
+#logo a{
+	border-top: none;
+	
+}
+
+
+/* -----------------NavBar--------------------------------------------- */
+.nav-list{
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0;
+	padding: 1rem 0;
+	
+}
+.nav-item{
+	list-style: none;
+	margin-right: 2rem;
+}
+
+.nav-item a {
+  color: #0065fc;
+  text-decoration: none;
+	
+}
+.nav-item:first-child{
+	margin-right: auto;
+	margin-left: 10px;
+}
+
+.navbar a:hover {
+  color: #0065fc;
+  text-decoration: none;
+	border-top : 3px solid  #0065FC;
+	padding-top: 20px;
+}
+.navbar .login {
+  border-top :hidden;
+	
+}
+
+/*--------------------------Entetes--------------------------------*/
+.grand-titre {
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.sous-titre {
+  margin: 10px 0px;
+}
+/*-------------------------Recherche et Icones---------------------*/
+.div-recherche {
+  display: inline-flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.icone-situer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: auto;
+  background-color: #F2F2F2;
+  border-radius: 14px 0 0 14px;
+}
+
+.fa-map-marker-alt {
+  font-size: 17px;
+}
+
+.input-recherche {
+  padding: 0 0 0 20px;
+  height: 50px;
+  width: 220px;
+  border: none;
+  border-top: solid 1px #F2F2F2;
+  border-bottom: solid 1px #F2F2F2;
+}
+
+.input-recherche::placeholder {
+  color: rgb(170, 170, 170);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.boutton-rechercher{
+  border: none;
+  border-radius: 0 14px 14px 0;
+  background-color: #0065fc;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 17px;
+  cursor: pointer;
+}
+
+.boutton-rechercher:hover {
+  background-color: #003c96;
+  transition: ease 0.3s;
+}
+
+/*-------------------- Les filtres ---------------------------*/
+.composants-filtres h3 {
+  font-size: 24px;
+  display: inline;
+}
+
+.composants-filtres ul {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.composants-filtres ul li {
+  display: inline;
+  margin-left: 25px;
+  font-weight: 700;
+  border: solid 2px #e2e2e2;
+  padding: 0 20px 0 0;
+  margin-top: 10px;
+  border-radius: 200px;
+ 
+}
+
+.composants-filtresul li:hover {
+  cursor: pointer;
+  background: #DEEBFF;
+  transition-duration: 0.25s;
+}
+
+.composants-filtres ul li:hover .icon-filter {
+  background: white;
+  transition-duration: 0.25s;
+}
+
+.icone-filtre  {
+  background-color: #DEEBFF;
+  color: #0065fc;
+  padding: 18px;
+  border-radius: 200px;
+  margin-right: 15px;
+}
+
+.info .fas {
+  color: #0065fc;
+  font-size: 16px;
+  padding: 7px 11px 7px 11px;
+  border: solid 1px #D9D9D9;
+  border-radius: 2000px;
+  margin-right: 20px;
+}
+
+.info p {
+  display: inline;
+}
+/*----------------------------Hébergements à Marseille--------------------------------------------*/
+                    /*-----------------------Positionnement-------------------------------*/
+.hebergement-populaire{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 56px;	
+}
+.bloc-hebergement  {
+   background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    border-radius: 20px;
+    padding: 45px 45px ;
+    max-width: 805px;
+		 }  
+.bloc-populaire
+{
+     background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 45px 45px;
+    max-width: 345px;
+}
+
+.etoile-bleue
+{
+    padding-left: 12px;
+    color: #0065fc;
+}
+.etoile-grise 
+{
+    color: #f2f2f2;
+}
+
+
+    
+.resultat-recherche h2 
+{
+    padding-left: 38px;
+}
+.containercard 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+.lien-carte
+{
+    margin: 15px 0 20px 0;
+}
+.card 
+{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.247);
+}
+.cardmain 
+{
+    padding: 5px 5px 10px 5px;
+}
+.card h4 
+{
+    padding-left: 12px;
+    margin: 2px 0 0 0;
+}
+.card p 
+{
+    font-size: 0.8rem;
+    padding-left: 12px;
+    margin: 6px 0;
+}
+.card .star 
+{
+    padding-left: 12px;
+    color: #0065fc;
+}
+.stargrey 
+{
+    color: #f2f2f2;
+}
+.imgmain 
+{
+    width: 236px;
+    height: 114px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.montrer-plus  a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+	margin-left: 38px;
+}
+
+/*--------------------Polpulaire ------------------------------*/
+
+
+
+.bloc-populaire .fa-chart-line 
+{
+    margin-left: 90px;
+}
+.bloc-populaire h2 
+
+.bloc-populaire .containercard 
+{
+    flex-direction: column;
+}
+.cardpopular 
+{
+    display: flex;
+    width: 334px;
+    height: 134px;
+    padding: 5px;
+}
+.imgpopular 
+{
+    width: 127px;
+    height: 134px;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.card:hover 
+{
+    box-shadow: none;
+}
+.card-title p 
+{
+    margin-bottom: 25%;
+}
+
+/*--------------------Les activités à Marseille ------------------------------*/
+.ativites_a_Marseille {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    max-width: 1440px;
+}
+.titre_activites {
+    margin-bottom: 27px;
+    font-size: large;
+}
+
+.activites {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.activite2et3,
+.activite5et6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.activite1,
+.activite2,
+.activite3,
+.activite4,
+.activite5,
+.activite6 {
+    box-shadow: 0 0 20px #0000002e;
+    padding: 0px 0px 20px 0px;
+    border-radius: 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+.photo_activite1,
+.photo_activite2,
+.photo_activite3,
+.photo_activite4,
+.photo_activite5,
+.photo_activite6 {
+    background-size: 100% 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px 0px 22px 0px;
+}
+
+.photo_activite11,
+.photo_activite22,
+.photo_activite33,
+.photo_activite44,
+.photo_activite55,
+.photo_activite66 {
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#ativites_a_Marseille  h1 {
+    font-size: large;
+}
+
+#ativites_a_Marseille  h2 {
+    font-size: medium;
+}
+
+/* Footer */
+footer 
+{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.footercontent 
+{
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+}
+.footercontent div 
+{
+    margin-right: 230px;
+    padding-bottom: 30px;
+}
+footer h3 
+{
+    padding: 45px 0 10px 0;
+}
+footer ul 
+{
+    list-style: none;
+    padding: 0;
+}
+footer ul li 
+{
+    font-size: 1.06rem;
+    padding: 10px 0;
+}
+footer ul li a 
+{
+    text-decoration: none;
+    color: black;
+}
+footer ul li a:hover 
+{
+    color: #0065fc;
+}
+h3 
+{
+    font-size: 1.06rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/*-------------Pied de Page : Footer -------------------------------------------*/
+
+.footer {
+  width: 100%;
+  background: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divs-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.footer-div {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-div > * {
+  margin-bottom: 10px;
+}
+
+.footer-titre {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-lien:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+.footer-bloc-assistance {
+  margin-right: 20%;
+}
+
