@@ -1,44 +1,43 @@
 <!doctype html>
 <html lang="fr"><!-- L'attribut lang permet d'identifier la langue dans lequel est écrit le site, 
-elle permet également au lecteur d'écran pour les personne non/malvoyante de savoir dans quel langue le site est-->
-
-<head> <!-- nommer, décrire, encoder, référencer votre site-->
+elle permet également au lecteur d'écran pour les personne non/malvoyante de savoir dans quel langue le site est--><head> <!-- nommer, décrire, encoder, référencer votre site-->
     <meta charset="UTF-8"><!-- cette balise méta permet de préciser l'encodage utiliser pour le site-->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"><!-- cette balise est pour la compatibilité de navigateur -->
 <title>Reservia</title>
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="styles/reservia.css" /><!-- fichier qui contient le style/mise en page du site -->
+	<link rel="stylesheet" href="styles/styles.css" /><!-- fichier qui contient le style/mise en page du site -->
 	<!-- La compatibilité sur mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
    	<!-- cdn utiliser pour les icones-->
 	<script src="https://kit.fontawesome.com/7c9c7dfb74.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="./src/css/media-queries.css"><!-- fichier qui permet la compatibilité avec toutes tailles d'écrans -->
-	  <!-- Google Fonts-->    
+	<link rel="stylesheet" href="styles/media_queries.css"><!-- fichier qui permet la compatibilité avec toutes tailles d'écrans -->
+	<link rel="icon" href="img/favicon.ico" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	
-          <!--------------------------------  Barre de Navigation Navigation --------------------->	
+
+<!-- Barre de Navigation Navigation -->	
 
 <header>
           <nav class="navbar">	
 				 
 			 <ul class="nav-list"> 
 				 
-				<li class="nav-item" id="logo"><a href=""><img  src="img/logo/Reservia.svg" alt="logo"></a></li>
-               	<li class="nav-item" ><a href="#blocs">Hébergement</a></li>
-				<li class="nav-item" ><a href="#title-activities">Activités</a></li>		         
-              	<li class="nav-item login"><a  href="#">S'inscrire</a></li>
+				<li class="nav-item" id="logo"><a href=""><img  src="img/logo/Reservia.svg" alt="Reservia-logo"></a></li>
+               	<li class="nav-item" id="lien-hebergement"><a href="#blocs">Hébergement</a></li>
+				<li class="nav-item" id="lien-activite"><a href="#title-activities">Activités</a></li>		         
+              	<li class="nav-item login" id="lien_inscription"><a  href="#">S'inscrire</a></li>
 			</ul>			
           </nav>
 </header>
-	<main>
+	
+<main>
 	 <section>
-<!---------Section I - Nav Bar-------------------------------------------->		
      
 	
-<!---------Section I - Entêtes------------------------------------------->		
+<!--    Section I - Entêtes   -->		
+		 
 	 <div>
             <h1 class="grand-titre">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="sous-titre">En plein centre de ville ou en pleine nature</p>
@@ -53,7 +52,7 @@ elle permet également au lecteur d'écran pour les personne non/malvoyante de s
             
         </div>
 		
-<!---------Section I - Les Filtres------------------------------------------>
+<!-- Section I - Les Filtres -->
 		 
 		
 		 <div class="composants-filtres">          
@@ -73,7 +72,7 @@ elle permet également au lecteur d'écran pour les personne non/malvoyante de s
 	</section>
 		
 		
-<!---------Section II - Résultat de Recherche: Marseille France------------------------------------------>		
+<!-- Section II - Résultat de Recherche: Marseille France -->		
 	
 	<section class="hebergement-populaire">
 	
@@ -87,7 +86,7 @@ elle permet également au lecteur d'écran pour les personne non/malvoyante de s
 
                         <a class="lien-carte" href="#">
                             <div class="card cardmain">
-                                <div class=""><img class="imgmain" src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt=""></div>
+                                <div class=""><img class="imgmain" src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière"></div>
                                 <h4>Auberge la Cannebière</h4>
                                 <p>Nuit à partir de <b>25€</b></p>
                                 <span class="star">
@@ -101,7 +100,7 @@ elle permet également au lecteur d'écran pour les personne non/malvoyante de s
                         </a>
 						 <a class="lien-carte" href="#">
                          <div class="card cardmain">
-                           <div class=""><img class="imgmain" src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt=""></div>
+                           <div class=""><img class="imgmain" src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo Hôtel du port"></div>
                                 <h4>Hôtel du port</h4>
                              <p>Nuit à partir de <b>52€</b></p>
                              <span class="star">
@@ -115,7 +114,7 @@ elle permet également au lecteur d'écran pour les personne non/malvoyante de s
                         </a>
 						 <a class="lien-carte" href="#">
                          <div class="card cardmain">
-                           <img class="imgmain" src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+                           <img class="imgmain" src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel les mouette">
                                 <h4>Hôtel les mouettes</h4>
                              <p>Nuit à partir de <b>76€</b></p>
                              <span class="star">
@@ -129,8 +128,8 @@ elle permet également au lecteur d'écran pour les personne non/malvoyante de s
                         </a>
 						 <a class="lien-carte" href="#">
                          <div class="card cardmain">
-                           <img class="imgmain" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
-                                <h4>Hôtel de la mer&nbsp;</h4>
+                           <img class="imgmain" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                                <h4>Hôtel de la mer</h4>
                              <p>Nuit à partir de <b>46€</b></p>
                              <span class="star">
                                  <i class="fas fa-star fa-xs"></i>
@@ -143,7 +142,7 @@ elle permet également au lecteur d'écran pour les personne non/malvoyante de s
                         </a>
 						 <a class="lien-carte" href="#">
                          <div class="card cardmain">
-                          <img class="imgmain" src="img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+                          <img class="imgmain" src="img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le panier">
                                 <h4>Auberge Le panier</h4>
                              <p>Nuit à partir de <b>23€</b></p>
                              <span class="star">
@@ -157,7 +156,7 @@ elle permet également au lecteur d'écran pour les personne non/malvoyante de s
                         </a>
 						 <a class="lien-carte" href="#">
                          <div class="card cardmain">
-                          <img class="imgmain" src="img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+                          <img class="imgmain" src="img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                                 <h4>Hôtel chez Amina</h4>
                              <p>Nuit à partir de <b>96€</b></p>
                              <span class="star">
@@ -174,6 +173,9 @@ elle permet également au lecteur d'écran pour les personne non/malvoyante de s
 					<p class="montrer-plus push-to-right"><a href="#">Afficher plus</a></p>
 			</div>
 	</div>
+		
+<!-- Bloc Populaire  -->
+		
 	        <div class="bloc-populaire">
                         <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
 
@@ -181,9 +183,9 @@ elle permet également au lecteur d'écran pour les personne non/malvoyante de s
 
                         <a class="cardlink" href="#">
                             <div class="card cardpopular">
-                                <img class="imgpopular" src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+                                <img class="imgpopular" src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                                 <div class="card-title">
-                                    <h4>Hôtel Le soleil du<br>matin</h4>
+                                    <h4>Hôtel Le soleil du matin</h4>
                                     <p>Nuit à partir de <b>128€</b></p>
                                     <span class="star">
                                         <i class="fas fa-star fa-xs"></i>
@@ -198,9 +200,9 @@ elle permet également au lecteur d'écran pour les personne non/malvoyante de s
 
                         <a class="cardlink" href="#">
                             <div class="card cardpopular">
-                                <img class="imgpopular"  src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+                                <img class="imgpopular"  src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
                                 <div class="card-title">
-                                    <h4>Au coeur de l'eau<br>Chambres d'hôtes</h4>
+                                    <h4>Au coeur de l'eau Chambres d'hôtes</h4>
                                     <p>Nuit à partir de <b>71€</b></p>
                                     <span class="star">
                                         <i class="fas fa-star fa-xs"></i>
@@ -215,9 +217,9 @@ elle permet également au lecteur d'écran pour les personne non/malvoyante de s
 
                         <a class="cardlink" href="#">
                             <div class="card cardpopular">
-                                <img class="imgpopular" src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+                                <img class="imgpopular" src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
                                 <div class="card-title">
-                                    <h4>Hôtel Tout bleu et<br>Blanc</h4>
+                                    <h4>Hôtel Tout bleu et Blanc</h4>
                                     <p>Nuit à partir de <b>68€</b></p>
                                     <span class="star">
                                         <i class="fas fa-star fa-xs"></i>
@@ -234,12 +236,73 @@ elle permet également au lecteur d'écran pour les personne non/malvoyante de s
 
                 </div>
 	</section>
-		<!-----------------------------Les activités à Marseille--------------------------------->
 		
-   
-	</main>
 		
-	<!---------Footer Pied de page ----------------------------------------->	
+		
+<!-- Section III : Les activités à Marseille -->
+		
+	<section id="bloc-activites">
+
+			<h2 class="titre-activite">Activités à Marseille</h2>
+
+		  <div class="activites-divs">
+
+
+			<div class="images-titres">
+
+			  <div class="carte"> 
+				  <img class="droite-gauche" src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+				  <h4 class="soustitre">Vieux Port</h4></div>
+
+
+			</div>
+
+
+
+			  <div class="images-titres">
+
+				 <div class="carte"> 
+					 <img class="petites" src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+					 <h4 class="soustitre">Fort de Pomègues</h4></div>
+
+				  <div class="carte">
+					  <img class="petites" src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul">
+					 <h4 class="soustitre">Iles du Frioul</h4></div>
+
+				</div>
+
+
+
+
+				<div class="images-titres">
+
+				 <div class="carte"> 
+					 <img class="droite-gauche" src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+					 <h4 class="soustitre">Parc National des Calanques</h4></div>
+				</div>
+
+
+
+				<div class="images-titres">
+
+				   <div class="carte"> 
+					   <img class="petites" src="img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+					  <h4 class="soustitre">Notre-Dame de la Garde</h4></div>
+
+				   <div class="carte"> 
+					   <img class="petites" src="img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+					  <h4 class="soustitre">Parc Longchamp</h4></div>
+
+
+				</div>
+			</div>
+
+		  </section>	
+		</main>
+
+	<!-- Footer Pied de page   -->	
+	
+	
 	 <footer class="footer">
     <div class="divs-footer">
         <div class="footer-div">

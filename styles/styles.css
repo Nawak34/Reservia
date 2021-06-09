@@ -32,33 +32,38 @@ header {
 	justify-content: flex-end;
 	align-items: center;
 	margin: 0;
-	padding: 1rem 0;
+	padding: 16px 0;
 	
 }
 .nav-item{
 	list-style: none;
-	margin-right: 2rem;
+	margin-right: 20px;
 }
 
-.nav-item a {
+
+.nav-item lien-activite a {
   color: #0065fc;
   text-decoration: none;
-	
 }
 .nav-item:first-child{
 	margin-right: auto;
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 .navbar a:hover {
   color: #0065fc;
   text-decoration: none;
-	border-top : 3px solid  #0065FC;
-	padding-top: 20px;
+  border-top : 3px solid  #0065FC;
+  padding-top: 20px;
 }
 .navbar .login {
   border-top :hidden;
 	
+}
+#lien_inscription a{
+  color: #0065fc;
+  font-weight: 600;
+  border-top:none;
 }
 
 /*--------------------------Entetes--------------------------------*/
@@ -179,7 +184,10 @@ header {
   display: inline;
 }
 /*----------------------------Hébergements à Marseille--------------------------------------------*/
-                    /*-----------------------Positionnement-------------------------------*/
+                   
+
+
+/*-----------------------Positionnement des blocs Hébergement populaire-------------------------------*/
 .hebergement-populaire{
 	display: flex;
     flex-direction: row;
@@ -215,10 +223,7 @@ header {
 .etoile-grise 
 {
     color: #f2f2f2;
-}
-
-
-    
+}    
 .resultat-recherche h2 
 {
     padding-left: 38px;
@@ -228,7 +233,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .lien-carte
 {
@@ -239,6 +244,7 @@ header {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.247);
+	margin-bottom: 10px;
 }
 .cardmain 
 {
@@ -280,7 +286,7 @@ header {
 	margin-left: 38px;
 }
 
-/*--------------------Polpulaire ------------------------------*/
+/*--------------------Populaire ------------------------------*/
 
 
 
@@ -320,129 +326,58 @@ header {
 }
 
 /*--------------------Les activités à Marseille ------------------------------*/
-.ativites_a_Marseille {
-    background-color: white;
+
+.bloc-activites{
+	margin-bottom: 50px;
+	}
+.titre-activite{
+	font-size: 25px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+.activites-divs
+{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
-    max-width: 1440px;
-}
-.titre_activites {
-    margin-bottom: 27px;
-    font-size: large;
-}
-
-.activites {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+	flex-direction: row;
+	height:100%;
+	
+	}
+ 
+.soustitre{
+	background-color: white;
+	border-radius: 0 0 20px 20px;
+	margin-left: 10px;
 }
 
-.activite2et3,
-.activite5et6 {
-    display: flex;
-    flex-direction: column;
+.images-titres{
+	position: relative;
+  	border-radius: 20px;
+  	padding: 5px;
 }
 
-.activite1,
-.activite2,
-.activite3,
-.activite4,
-.activite5,
-.activite6 {
-    box-shadow: 0 0 20px #0000002e;
-    padding: 0px 0px 20px 0px;
-    border-radius: 20px;
-    margin: 0px 0px 20px 0px;
-}
-
-.photo_activite1,
-.photo_activite2,
-.photo_activite3,
-.photo_activite4,
-.photo_activite5,
-.photo_activite6 {
-    background-size: 100% 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 0px 0px 22px 0px;
-}
-
-.photo_activite11,
-.photo_activite22,
-.photo_activite33,
-.photo_activite44,
-.photo_activite55,
-.photo_activite66 {
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-#ativites_a_Marseille  h1 {
-    font-size: large;
-}
-
-#ativites_a_Marseille  h2 {
-    font-size: medium;
-}
-
-/* Footer */
-footer 
+.droite-gauche
 {
     width: 100%;
-    background-color: #f2f2f2;
-}
-.footercontent 
+    height: 416px;	 
+ 	object-fit: cover;
+  	border-radius: 20px; 
+	margin: 0;
+} 
+.petites
 {
-    max-width: 1350px;
-    margin: auto;
-    display: flex;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;   
+	border-radius: 20px;	 
+    margin: 0;
 }
-.footercontent div 
-{
-    margin-right: 230px;
-    padding-bottom: 30px;
-}
-footer h3 
-{
-    padding: 45px 0 10px 0;
-}
-footer ul 
-{
-    list-style: none;
-    padding: 0;
-}
-footer ul li 
-{
-    font-size: 1.06rem;
-    padding: 10px 0;
-}
-footer ul li a 
-{
-    text-decoration: none;
-    color: black;
-}
-footer ul li a:hover 
-{
-    color: #0065fc;
-}
-h3 
-{
-    font-size: 1.06rem;
-    font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
+ 
+.carte
+{  
+ background-color: white;
+ border-radius: 0 0 20px 20px;
+ margin: 0;
+ bottom: 0;  } 
 /*-------------Pied de Page : Footer -------------------------------------------*/
 
 .footer {
@@ -483,4 +418,5 @@ h3
 .footer-bloc-assistance {
   margin-right: 20%;
 }
+	
 
