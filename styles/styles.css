@@ -11,19 +11,19 @@ a {
 }
 
 main {
-  width: 98%;
+  width: 100%;
   max-width: 1440px;
   margin: auto;
 }
 header {
-  width: 98%;
+  width: 100%;
   max-width: 1440px;
   margin: auto;
 }
 #logo a{
 	border-top: none;
-	
-}
+	padding: 0px;
+	}
 
 
 /* -----------------NavBar--------------------------------------------- */
@@ -37,28 +37,42 @@ header {
 }
 .nav-item{
 	list-style: none;
-	margin-right: 20px;
+	margin-right: 25px;
 }
 
-
-.nav-item lien-activite a {
-  color: #0065fc;
-  text-decoration: none;
-}
 .nav-item:first-child{
 	margin-right: auto;
-	margin-left: 20px;
+	padding-left: 30px;
 }
 
 .navbar a:hover {
   color: #0065fc;
-  text-decoration: none;
   border-top : 3px solid  #0065FC;
   padding-top: 20px;
+  
 }
 .navbar .login {
   border-top :hidden;
 	
+}
+
+#lien-hebergement a:link {
+  color: #0065fc;
+  padding-top: 20px;
+  border-top : 3px solid  #0065FC;
+  
+}
+#lien-hebergement a:visited {
+  color: #0065fc;
+  padding-top: 20px;
+  border-top : 3px solid  #0065FC;
+  
+}
+
+
+#lien-activite a {
+  ccolor: black;
+  text-decoration: none;
 }
 #lien_inscription a{
   color: #0065fc;
@@ -183,17 +197,18 @@ header {
 .info p {
   display: inline;
 }
-/*----------------------------Hébergements à Marseille--------------------------------------------*/
+/*----------------------------Hébergements à Marseille--------------------------------*/
                    
 
 
-/*-----------------------Positionnement des blocs Hébergement populaire-------------------------------*/
+/*-- Positionnement des blocs Hébergement populaire ----*/
 .hebergement-populaire{
 	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 56px;	
+    justify-content:space-between;
+    margin-bottom: 30px;
+	padding-top: 30px;
 }
 .bloc-hebergement  {
    background-color: #F2F2F2;
@@ -203,15 +218,16 @@ header {
     align-content: space-between;
     border-radius: 20px;
     padding: 45px 45px ;
-    max-width: 805px;
-		 }  
+    max-width: 800px;
+}  
 .bloc-populaire
 {
-     background-color: #f2f2f2;
+    background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    padding: 45px 45px;
+    padding-left:45px;
+	padding-right: 45px;
     max-width: 345px;
 }
 
@@ -257,7 +273,7 @@ header {
 }
 .card p 
 {
-    font-size: 0.8rem;
+    font-size: 16px;
     padding-left: 12px;
     margin: 6px 0;
 }
@@ -303,7 +319,7 @@ header {
 .cardpopular 
 {
     display: flex;
-    width: 334px;
+    width: 100%;
     height: 134px;
     padding: 5px;
 }
@@ -316,10 +332,7 @@ header {
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
-.card:hover 
-{
-    box-shadow: none;
-}
+
 .card-title p 
 {
     margin-bottom: 25%;
@@ -328,6 +341,7 @@ header {
 /*--------------------Les activités à Marseille ------------------------------*/
 
 .bloc-activites{
+	margin-top: 50px;
 	margin-bottom: 50px;
 	}
 .titre-activite{
@@ -339,14 +353,16 @@ header {
 {
     display: flex;
 	flex-direction: row;
-	height:100%;
+	align-items: center;
+	width:100%;
 	
 	}
  
 .soustitre{
 	background-color: white;
-	border-radius: 0 0 20px 20px;
 	margin-left: 10px;
+	border-radius: 0 0 20px 20px;
+    padding: 20px 0 20px ;
 }
 
 .images-titres{
@@ -360,7 +376,7 @@ header {
     width: 100%;
     height: 416px;	 
  	object-fit: cover;
-  	border-radius: 20px; 
+  	border-radius: 20px 20px 0 0; 
 	margin: 0;
 } 
 .petites
@@ -368,16 +384,17 @@ header {
     width: 100%;
     height: 160px;
     object-fit: cover;   
-	border-radius: 20px;	 
+	border-radius: 20px 20px 0 0;	 
     margin: 0;
 }
  
 .carte
 {  
- background-color: white;
- border-radius: 0 0 20px 20px;
+ border-radius: 20px 20px;
  margin: 0;
- bottom: 0;  } 
+ bottom: 0;  
+ box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.247);
+} 
 /*-------------Pied de Page : Footer -------------------------------------------*/
 
 .footer {
@@ -418,5 +435,3 @@ header {
 .footer-bloc-assistance {
   margin-right: 20%;
 }
-	
-
