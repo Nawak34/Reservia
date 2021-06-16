@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*Section I - Entêtes*/
+
+@media all and (max-width: 1400px)
+{
+.grand-titre {
+  font-size: 25px;
+  margin: 20px 0 5px 15px;
+}
+
+.sous-titre {
+  margin: 10px 0 5px 15px;
+}
+
+}
+/*Activités Marseille*/
+@media all and (max-width: 1200px)
+{
+    .activities h2 
+    {
+        padding-left: 20px;
+    }
+    .activites-divs 
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .soustitre 
+    {
+        padding: 10px 15px;
+    }
+    
+}
+ 
+@media all and (min-width: 768px) and (max-width: 1200px)
+{
+    .activites-divs
+    {
+		flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+	
+	    .droite-gauche
+{
+    width: 100%;
+    height: 208px;	 
+ 	object-fit: cover;
+  	border-radius: 20px 20px 0 0; 
+	margin: 0;
+} 
+.petites
+{
+    width: 100%;
+    height: 80px;
+    object-fit: cover;   
+	border-radius: 20px 20px 0 0;	 
+    margin: 0;
+}
+	
+	
+	
+}
+ 
+@media all and (min-width: 330px) and (max-width: 767px) 
+{
+    .activites-divs
+    {
+		flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+    }
+    .droite-gauche
+{
+    width: 100%;
+    height: 150px;	 
+ 	object-fit: cover;
+  	border-radius: 20px 20px 0 0; 
+	margin: 0;
+} 
+.petites
+{
+    width: 100%;
+    height: 90px;
+    object-fit: cover;   
+	border-radius: 20px 20px 0 0;	 
+    margin: 0;
+}
+}
+
+
+/*Footer Pied de page*/
+@media all and (min-width: 768px) and (max-width: 1200px)
+{
+    .divs-footer {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .divs-footer footer-div {
+    padding: 10px 20px;
+  }
+}
+@media all and (min-width: 330px) and (max-width: 767px) 
+{
+    footer-div
+    {
+        padding: 15px;
+    }
+}
+
+
